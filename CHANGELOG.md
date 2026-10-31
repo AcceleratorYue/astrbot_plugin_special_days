@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0
+
+- 新增法定节假日自动抓取（NateScarlet/holiday-cn）；
+- 启动后台更新、缓存、离线兜底；
+- 管理员 `/特殊日 刷新节假日`；
+- 配置 `holiday_auto_update` / `holiday_update_url`。
+
 ## 0.8.0
 
 - 插件中文展示名：「今天是什么日子」；

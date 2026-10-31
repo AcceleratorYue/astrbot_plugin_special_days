@@ -7,8 +7,10 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import re
+import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -22,6 +24,13 @@ from astrbot.api.star import Context, Star, StarTools
 from astrbot.api.web import json_response, request
 
 from .core.builtin import load_builtin_dir, match_builtin
+from .core.holiday import (
+    HOLIDAY_URL_TEMPLATE,
+    load_cache,
+    merge_builtin_days,
+    parse_holiday_payload,
+    save_cache,
+)
 from .core.prompt import build_prompt_block
 from .core.rules import (
     TONE_VALUES,
@@ -33,7 +42,7 @@ from .core.store import CustomDayStore
 
 PLUGIN_NAME = "astrbot_plugin_special_days"
 LOG = f"[{PLUGIN_NAME}]"
-VERSION = "0.8.0"
+VERSION = "0.9.0"
 
 _HELP = """特殊日程用法：
 /特殊日 今天
@@ -42,6 +51,7 @@ _HELP = """特殊日程用法：
 /特殊日 删除 <id>
 /特殊日 导出
 /特殊日 导入 <JSON>
+/特殊日 刷新节假日（管理员）
 /特殊日 帮助
 
 日期格式：7-21、7月21日、周四、每周四、5月第2个周日、复活节、2026-11-11
@@ -65,6 +75,13 @@ class SpecialDaysPlugin(Star):
             logger.error("%s 内置日程加载失败: %s", LOG, exc)
             self.builtin_days = []
 
+        self._holiday_cache_path = self.data_dir / "holidays_cache.json"
+        self._holiday_task: asyncio.Task | None = None
+        cached_holidays = load_cache(self._holiday_cache_path)
+        if cached_holidays:
+            self.builtin_days = merge_builtin_days(self.builtin_days, cached_holidays)
+            logger.info("%s 已从缓存加载 %d 条自动节假日", LOG, len(cached_holidays))
+
         try:
             self.store = CustomDayStore(self.data_dir / "special_days.db")
         except Exception as exc:  # noqa: BLE001
@@ -81,6 +98,16 @@ class SpecialDaysPlugin(Star):
             self.timezone,
             "ok" if self.store else "failed",
         )
+
+    async def initialize(self) -> None:
+        """插件启用后后台更新法定节假日数据，失败不影响启动。"""
+        if not self._cfg_bool("holiday_auto_update", True):
+            return
+        self._holiday_task = asyncio.create_task(self._refresh_holidays())
+
+    async def terminate(self) -> None:
+        if self._holiday_task is not None and not self._holiday_task.done():
+            self._holiday_task.cancel()
 
     def _load_timezone(self) -> ZoneInfo:
         name = str(self.config.get("timezone") or "Asia/Shanghai").strip()
@@ -104,6 +131,61 @@ class SpecialDaysPlugin(Star):
             return int(self.config.get(key, default))
         except (TypeError, ValueError):
             return default
+
+    async def _refresh_holidays(self) -> str:
+        """抓取当年/前后一年法定节假日；失败时保留内置和缓存。"""
+        template = str(self.config.get("holiday_update_url") or "").strip() or HOLIDAY_URL_TEMPLATE
+        current = self._now_date()
+        years = (current.year - 1, current.year, current.year + 1)
+        extra: list[dict[str, Any]] = []
+        fetched_years: list[int] = []
+        seen_urls: set[str] = set()
+        for year in years:
+            url = template.format(year=year) if "{year}" in template else template
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+            payload = await self._fetch_json(url)
+            if payload is None:
+                continue
+            entries = parse_holiday_payload(payload)
+            if not entries:
+                continue
+            extra.extend(entries)
+            fetched_years.append(year)
+        if not extra:
+            logger.info("%s 节假日自动更新未拿到有效数据，继续使用内置/缓存", LOG)
+            return "节假日更新失败：没有拿到有效数据，继续使用内置/缓存。"
+
+        cached = load_cache(self._holiday_cache_path)
+        combined = merge_builtin_days(cached, extra)
+        self.builtin_days = merge_builtin_days(self.builtin_days, combined)
+        try:
+            save_cache(self._holiday_cache_path, combined)
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("%s 写入节假日缓存失败: %s", LOG, exc)
+        logger.info(
+            "%s 节假日已更新 %d 条（年份 %s）",
+            LOG,
+            len(extra),
+            ",".join(str(y) for y in fetched_years),
+        )
+        return f"节假日数据已更新：新增/覆盖 {len(extra)} 条（年份 {','.join(map(str, fetched_years))}）。"
+
+    @staticmethod
+    async def _fetch_json(url: str) -> Any:
+        def _fetch() -> Any:
+            request = urllib.request.Request(
+                url, headers={"User-Agent": "astrbot_plugin_special_days"}
+            )
+            with urllib.request.urlopen(request, timeout=15) as response:
+                return json.loads(response.read().decode("utf-8"))
+
+        try:
+            return await asyncio.to_thread(_fetch)
+        except Exception as exc:  # noqa: BLE001
+            logger.debug("%s 拉取节假日失败 %s: %s", LOG, url, exc)
+            return None
 
     def _matches(self, current: date, scope_umo: str) -> list[dict[str, Any]]:
         matches: list[dict[str, Any]] = []
@@ -184,6 +266,12 @@ class SpecialDaysPlugin(Star):
             raw = body[len(parts[0]) :].strip()
             yield event.plain_result(self._import_text(event, raw))
             return
+        if action in ("刷新节假日", "更新节假日", "节假日刷新"):
+            if not self._is_admin(event):
+                yield event.plain_result("只有管理员可以刷新节假日数据。")
+            else:
+                yield event.plain_result(await self._refresh_holidays())
+            return
         if action in ("帮助", "help", "?"):
             yield event.plain_result(_HELP)
             return
@@ -223,7 +311,7 @@ class SpecialDaysPlugin(Star):
                 str(x.get("name") or ""),
             ),
         ):
-            source = "内置" if item.get("source") == "builtin" else "自定义"
+            source = "内置" if item.get("source") in ("builtin", "holiday_cn", "lunar") else "自定义"
             tone = normalize_tone(item.get("tone"))
             desc = str(item.get("description") or "").strip()
             suffix = f"：{desc}" if desc else ""

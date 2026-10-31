@@ -67,5 +67,17 @@
     "type": "bool",
     "default": false,
     "hint": "开启后每次注入会记录一条日志。"
+  },
+  "holiday_auto_update": {
+    "description": "自动更新法定节假日",
+    "type": "bool",
+    "default": true,
+    "hint": "启动后后台抓取当年/前后一年 holiday-cn 数据，失败时继续使用内置/缓存。"
+  },
+  "holiday_update_url": {
+    "description": "节假日数据 URL 模板",
+    "type": "string",
+    "default": "",
+    "hint": "留空使用 NateScarlet/holiday-cn；可用 {year} 占位符。"
   }
 }

@@ -10,7 +10,7 @@ desc: |-
 
   内置公历、农历节日、中国法定节假日/调休、第 N 个星期几和复活节；
   支持当前会话自定义日程、全局日程、LLM 工具和 WebUI 管理页。
-version: 0.8.0
+version: 0.9.0
 author: AcceleratorYue
 repo: https://github.com/AcceleratorYue/astrbot_plugin_special_days
 astrbot_version: ">=4.24,<5"

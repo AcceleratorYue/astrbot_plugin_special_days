@@ -11,7 +11,7 @@
 - 不额外调用 LLM，不修改消息链，不写对话历史；
 - 内置日程只读本地 JSON，运行时不联网。
 
-当前版本 **0.8.0**。
+当前版本 **0.9.0**。
 
 ## 功能
 
@@ -64,6 +64,7 @@ git clone https://github.com/AcceleratorYue/astrbot_plugin_special_days
 /特殊日 删除 <id>
 /特殊日 导出
 /特殊日 导入 <JSON>
+/特殊日 刷新节假日（管理员）
 /特殊日 帮助
 ```
 
@@ -139,6 +140,8 @@ create / update / delete / list / today
 | `suppress_meme_on_solemn` | `true` | 同日有纪念日时丢弃玩梗日 |
 | `custom_overrides_builtin` | `true` | 同日同名时自定义覆盖内置 |
 | `require_tool_confirm` | `false` | LLM 工具写入是否需要 `confirm=true` |
+| `holiday_auto_update` | `true` | 启动后台抓取当年/前后一年法定节假日 |
+| `holiday_update_url` | 空 | 自定义节假日 URL 模板，支持 `{year}` |
 | `debug_log` | `false` | 记录注入日志 |
 
 ## 注入示例
@@ -153,6 +156,16 @@ create / update / delete / list / today
 
 没有命中时不会注入任何内容。
 
+## 法定节假日自动更新
+
+数据源：`https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master/{year}.json`
+
+- 默认启动后台更新 2025/2026/2027 等年份；
+- 成功写入缓存，重启后先加载缓存；
+- 网络失败不影响插件，继续用 `data/holiday_cn_days.json` 兜底；
+- 缓存路径：`data/plugin_data/astrbot_plugin_special_days/holidays_cache.json`；
+- 管理命令：`/特殊日 刷新节假日`。
+
 ## 数据文件
 
 ```text
@@ -162,7 +175,7 @@ data/holiday_cn_days.json    中国法定节假日/调休 one_time 快照（2025
 data/computed_days.json      第 N 个星期几/复活节规则
 ```
 
-运行时只读本地 JSON，不联网。数据由 `scripts/generate_calendar_data.py` 生成；官方发布新一年法定节假日后重新生成并重载插件。
+内置 JSON 是离线兜底；启动后会后台从 [NateScarlet/holiday-cn](https://github.com/NateScarlet/holiday-cn) 抓取当年/前后一年法定节假日，写入 `plugin_data/astrbot_plugin_special_days/holidays_cache.json`，失败时继续用内置/缓存。管理员可用 `/特殊日 刷新节假日` 手动刷新。
 
 ## 开发
 
