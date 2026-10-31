@@ -583,6 +583,8 @@ class SpecialDaysPlugin(Star):
         if self.store is None:
             return json_response({"ok": False, "error": "自定义日程库不可用"})
         data = await request.json(default={})
+        if not isinstance(data, dict):
+            return json_response({"ok": False, "error": "请求体必须是 JSON 对象"})
         try:
             created = self.store.add(
                 name=data.get("name", ""),
@@ -603,6 +605,8 @@ class SpecialDaysPlugin(Star):
         if self.store is None:
             return json_response({"ok": False, "error": "自定义日程库不可用"})
         data = await request.json(default={})
+        if not isinstance(data, dict):
+            return json_response({"ok": False, "error": "请求体必须是 JSON 对象"})
         day_id = str(data.get("id") or data.get("day_id") or "").strip()
         if not day_id:
             return json_response({"ok": False, "error": "缺少 id"})
@@ -628,6 +632,8 @@ class SpecialDaysPlugin(Star):
         if self.store is None:
             return json_response({"ok": False, "error": "自定义日程库不可用"})
         data = await request.json(default={})
+        if not isinstance(data, dict):
+            return json_response({"ok": False, "error": "请求体必须是 JSON 对象"})
         day_id = str(data.get("id") or data.get("day_id") or "").strip()
         if not day_id:
             return json_response({"ok": False, "error": "缺少 id"})
@@ -651,6 +657,8 @@ class SpecialDaysPlugin(Star):
         if self.store is None:
             return json_response({"ok": False, "error": "自定义日程库不可用"})
         data = await request.json(default={})
+        if not isinstance(data, dict):
+            return json_response({"ok": False, "error": "请求体必须是 JSON 对象"})
         payload = data.get("data", data)
         if isinstance(payload, str):
             if len(payload) > 1_000_000:
