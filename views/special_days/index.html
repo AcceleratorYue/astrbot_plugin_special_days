@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>今天是什么日子 · 全局日程</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f7fb; --card:#fff; --text:#1f2430; --muted:#687083; --line:#e4e7ef; --accent:#5b6cff; --danger:#d54a4a; }
+    html[data-theme="dark"] { --bg:#171922; --card:#222633; --text:#eef0f7; --muted:#9aa3b5; --line:#343a4b; --accent:#8290ff; --danger:#ff7070; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.6 system-ui, "Microsoft YaHei", sans-serif; }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 18px 64px; }
+    h1 { font-size: 22px; margin: 0 0 6px; }
+    .sub { color:var(--muted); margin-bottom: 18px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; margin-bottom:16px; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; }
+    .row > * { flex:1 1 180px; }
+    label { display:block; font-size:12px; color:var(--muted); margin:0 0 4px; }
+    input, select, textarea, button { font:inherit; }
+    input, select, textarea { width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--text); }
+    textarea { min-height:90px; resize:vertical; font-family: ui-monospace, Consolas, monospace; font-size:12px; }
+    button { padding:8px 13px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--text); cursor:pointer; }
+    button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+    button.danger { color:var(--danger); }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-weight:500; font-size:12px; }
+    .muted { color:var(--muted); }
+    .pill { display:inline-block; padding:1px 7px; border-radius:99px; background:var(--bg); border:1px solid var(--line); font-size:12px; }
+    .toast { min-height:20px; color:var(--muted); margin-top:8px; }
+    .error { color:var(--danger); }
+    .actions { white-space:nowrap; }
+    .actions button { padding:4px 8px; font-size:12px; }
+    #empty { color:var(--muted); padding:12px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>今天是什么日子 · 全局管理</h1>
+  <div class="sub">这里维护<strong>全局</strong>自定义日程。会话内的日程请用 <code>/特殊日</code> 指令或让 Bot 调用工具。</div>
+
+  <div class="card">
+    <div class="row">
+      <div><label>版本</label><span id="version" class="muted">-</span></div>
+      <div><label>内置日程</label><span id="builtin" class="muted">-</span></div>
+      <div><label>时区</label><span id="timezone" class="muted">-</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:16px;margin:0 0 12px">新增 / 编辑（全局）</h2>
+    <input type="hidden" id="day-id" />
+    <div class="row">
+      <div><label>名称</label><input id="name" placeholder="例如 0721" maxlength="40" /></div>
+      <div><label>日期规则</label><input id="date" placeholder="7-21 / 5月第2个周日 / 复活节" /></div>
+      <div><label>语气</label>
+        <select id="tone">
+          <option value="neutral">neutral · 普通</option>
+          <option value="festive">festive · 节日</option>
+          <option value="meme">meme · 玩梗</option>
+          <option value="solemn">solemn · 纪念</option>
+        </select>
+      </div>
+      <div><label>启用</label>
+        <select id="enabled"><option value="true">启用</option><option value="false">停用</option></select>
+      </div>
+    </div>
+    <div style="margin-top:10px"><label>描述（最多 160 字）</label><input id="description" maxlength="160" placeholder="给模型看的简短背景" /></div>
+    <div class="row" style="margin-top:12px">
+      <div><button class="primary" id="save">保存</button> <button id="reset">清空表单</button></div>
+      <div class="toast" id="toast"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap">
+      <h2 style="font-size:16px;margin:0">全局自定义日程</h2>
+      <div><button id="refresh">刷新</button> <button id="export">导出 JSON</button></div>
+    </div>
+    <div id="empty" hidden>还没有全局自定义日程。</div>
+    <table>
+      <thead><tr><th>名称</th><th>规则</th><th>语气</th><th>描述</th><th>状态</th><th>操作</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:16px;margin:0 0 8px">导入 JSON</h2>
+    <textarea id="import-data" placeholder='粘贴 /特殊日 导出的 JSON，或 {"version":1,"days":[...]}'></textarea>
+    <div class="row" style="margin-top:10px">
+      <div><button id="import">导入到全局</button></div>
+      <div class="toast" id="import-toast"></div>
+    </div>
+  </div>
+</main>
+<script src="/api/plugin/page/bridge-sdk.js"></script>
+<script>
+(async function () {
+  const api = window.AstrBotPluginPage || window.AstrBotPluginView;
+  if (!api) {
+    document.body.innerHTML = "<main><p class='error'>页面桥接未加载，请从 AstrBot 插件管理页打开，或刷新页面。</p></main>";
+    return;
+  }
+  await api.ready();
+  const $ = (id) => document.getElementById(id);
+  let days = [];
+
+  function toast(el, text, isError) {
+    el.textContent = text || "";
+    el.className = "toast" + (isError ? " error" : "");
+  }
+
+  function render(data) {
+    days = Array.isArray(data.days) ? data.days : [];
+    $("version").textContent = data.version || "-";
+    $("builtin").textContent = String(data.builtin_count ?? "-") + " 条";
+    $("timezone").textContent = data.timezone || "-";
+    const tbody = $("rows");
+    tbody.innerHTML = "";
+    $("empty").hidden = days.length > 0;
+    for (const day of days) {
+      const tr = document.createElement("tr");
+      const td = (text) => { const el = document.createElement("td"); el.textContent = text; return el; };
+      tr.appendChild(td(day.name));
+      tr.appendChild(td(day.rule_text || ""));
+      const tone = document.createElement("td");
+      const pill = document.createElement("span"); pill.className = "pill"; pill.textContent = day.tone; tone.appendChild(pill); tr.appendChild(tone);
+      tr.appendChild(td(day.description || ""));
+      tr.appendChild(td(day.enabled ? "启用" : "停用"));
+      const actions = document.createElement("td"); actions.className = "actions";
+      const edit = document.createElement("button"); edit.textContent = "编辑";
+      edit.onclick = () => {
+        $("day-id").value = day.id; $("name").value = day.name || "";
+        $("date").value = day.rule ? JSON.stringify(day.rule) : "";
+        $("tone").value = day.tone || "neutral"; $("description").value = day.description || "";
+        $("enabled").value = day.enabled ? "true" : "false";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+      const del = document.createElement("button"); del.textContent = "删除"; del.className = "danger";
+      del.onclick = async () => {
+        if (!confirm("删除全局日程「" + day.name + "」？")) return;
+        const r = await api.apiPost("webui/delete", { id: day.id });
+        if (!r.ok) return toast($("toast"), r.error || "删除失败", true);
+        render(r); toast($("toast"), "已删除");
+      };
+      actions.append(edit, " ", del); tr.appendChild(actions);
+      tbody.appendChild(tr);
+    }
+  }
+
+  async function load() {
+    try { render(await api.apiGet("webui/state")); }
+    catch (e) { toast($("toast"), e?.message || String(e), true); }
+  }
+
+  $("save").onclick = async () => {
+    const body = {
+      name: $("name").value.trim(),
+      date: $("date").value.trim(),
+      tone: $("tone").value,
+      description: $("description").value.trim(),
+      enabled: $("enabled").value === "true",
+    };
+    if (!body.name || !body.date) return toast($("toast"), "名称和日期规则不能为空", true);
+    const id = $("day-id").value;
+    const result = id ? await api.apiPost("webui/update", { ...body, id }) : await api.apiPost("webui/create", body);
+    if (!result.ok) return toast($("toast"), result.error || "保存失败", true);
+    $("day-id").value = ""; $("name").value = ""; $("date").value = ""; $("description").value = "";
+    render(result); toast($("toast"), id ? "已更新" : "已创建");
+  };
+
+  $("reset").onclick = () => {
+    $("day-id").value = ""; $("name").value = ""; $("date").value = ""; $("description").value = ""; $("tone").value = "neutral"; $("enabled").value = "true";
+  };
+  $("refresh").onclick = load;
+  $("export").onclick = async () => {
+    const r = await api.apiGet("webui/export");
+    if (!r.ok) return toast($("toast"), r.error || "导出失败", true);
+    const blob = new Blob([JSON.stringify({ version: 1, days: r.days || [] }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a"); a.href = url; a.download = "special_days.json"; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  $("import").onclick = async () => {
+    const text = $("import-data").value.trim();
+    if (!text) return toast($("import-toast"), "请先粘贴 JSON", true);
+    const r = await api.apiPost("webui/import", { data: text });
+    if (!r.ok) return toast($("import-toast"), r.error || "导入失败", true);
+    render(r);
+    toast($("import-toast"), `导入完成：新增 ${r.imported}，跳过 ${r.skipped}`);
+  };
+
+  await load();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,989 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "id": "cn_2025-01-01_元旦_off",
+      "name": "元旦",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-01-26_春节_work",
+      "name": "调休上班（春节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-26"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-01-28_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-28"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-01-29_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-29"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-01-30_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-30"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-01-31_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-31"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-02-01_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-02-02_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-02-03_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-02-04_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-02-08_春节_work",
+      "name": "调休上班（春节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-08"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-04-04_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-04-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-04-05_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-04-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-04-06_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-04-06"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-04-27_劳动节_work",
+      "name": "调休上班（劳动节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-04-27"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-01_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-02_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-03_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-04_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-05_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-05-31_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-31"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-06-01_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-06-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-06-02_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-06-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-09-28_国庆节_work",
+      "name": "调休上班（国庆节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-09-28"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-09-28_中秋节_work",
+      "name": "调休上班（中秋节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-09-28"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-01_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-01_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-02_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-02_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-03_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-03_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-04_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-04_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-05_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-05_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-06_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-06"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-06_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-06"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-07_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-07"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-07_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-07"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-08_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-08"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-08_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-08"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-11_国庆节_work",
+      "name": "调休上班（国庆节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-11"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2025-10-11_中秋节_work",
+      "name": "调休上班（中秋节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-11"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-01-01_元旦_off",
+      "name": "元旦",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-01-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-01-02_元旦_off",
+      "name": "元旦",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-01-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-01-03_元旦_off",
+      "name": "元旦",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-01-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-01-04_元旦_work",
+      "name": "调休上班（元旦）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-01-04"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-14_春节_work",
+      "name": "调休上班（春节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-14"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-15_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-15"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-16_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-16"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-17_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-17"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-18_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-18"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-19_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-19"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-20_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-20"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-21_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-21"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-22_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-22"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-23_春节_off",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-23"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-02-28_春节_work",
+      "name": "调休上班（春节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-28"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-04-04_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-04-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-04-05_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-04-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-04-06_清明节_off",
+      "name": "清明节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-04-06"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-01_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-02_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-03_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-04_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-05_劳动节_off",
+      "name": "劳动节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-05-09_劳动节_work",
+      "name": "调休上班（劳动节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-05-09"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-06-19_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-06-19"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-06-20_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-06-20"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-06-21_端午节_off",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-06-21"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-09-20_国庆节_work",
+      "name": "调休上班（国庆节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-09-20"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-09-25_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-09-25"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-09-26_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-09-26"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-09-27_中秋节_off",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-09-27"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-01_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-01"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-02_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-02"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-03_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-03"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-04_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-04"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-05_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-05"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-06_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-06"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-07_国庆节_off",
+      "name": "国庆节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-07"
+      },
+      "tone": "festive",
+      "description": "法定假期；按当前语境自然提及，不要主动播报。",
+      "priority": 60,
+      "source": "holiday_cn"
+    },
+    {
+      "id": "cn_2026-10-10_国庆节_work",
+      "name": "调休上班（国庆节）",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-10"
+      },
+      "tone": "neutral",
+      "description": "调休补班日，可以自然提醒今天要上班。",
+      "priority": 30,
+      "source": "holiday_cn"
+    }
+  ]
+}

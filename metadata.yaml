@@ -1,0 +1,26 @@
+name: astrbot_plugin_special_days
+display_name: 今天是什么日子
+short_desc: 节假日、纪念日、玩梗日和自定义日期的轻量提示，命中当天才注入。
+desc: |-
+  给 AstrBot 加一个轻量的“今天是什么日子”感知。
+
+  当天命中节假日、纪念日、玩梗日或自定义日程时，在 LLM 请求的
+  system_prompt 末尾追加一小段背景提示，由模型根据聊天上下文决定
+  要不要提；不额外调用 LLM，不修改消息链，不写对话历史。
+
+  内置公历、农历节日、中国法定节假日/调休、第 N 个星期几和复活节；
+  支持当前会话自定义日程、全局日程、LLM 工具和 WebUI 管理页。
+version: 0.8.0
+author: AcceleratorYue
+repo: https://github.com/AcceleratorYue/astrbot_plugin_special_days
+astrbot_version: ">=4.24,<5"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+tags:
+  - 特殊日程
+  - 节假日
+  - 纪念日
+  - 玩梗日
+  - 日历
+  - 提示词

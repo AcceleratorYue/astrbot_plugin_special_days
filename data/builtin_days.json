@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "id": "new_year",
+      "name": "元旦",
+      "rule": {"type": "solar", "month": 1, "day": 1},
+      "tone": "festive",
+      "description": "新年的第一天，可以自然说一句新年相关的话。",
+      "priority": 60
+    },
+    {
+      "id": "valentine",
+      "name": "情人节",
+      "rule": {"type": "solar", "month": 2, "day": 14},
+      "tone": "festive",
+      "description": "情人节；有合适语境时可以轻轻接一句，不用强行浪漫。",
+      "priority": 55
+    },
+    {
+      "id": "womens_day",
+      "name": "国际妇女节",
+      "rule": {"type": "solar", "month": 3, "day": 8},
+      "tone": "festive",
+      "description": "国际妇女节，适合自然地说一句节日相关的话。",
+      "priority": 50
+    },
+    {
+      "id": "tree_planting_day",
+      "name": "植树节",
+      "rule": {"type": "solar", "month": 3, "day": 12},
+      "tone": "neutral",
+      "description": "植树节，可以作为聊天背景。",
+      "priority": 40
+    },
+    {
+      "id": "white_valentine",
+      "name": "白色情人节",
+      "rule": {"type": "solar", "month": 3, "day": 14},
+      "tone": "festive",
+      "description": "白色情人节，有合适语境可以接一句。",
+      "priority": 45
+    },
+    {
+      "id": "april_fools",
+      "name": "愚人节",
+      "rule": {"type": "solar", "month": 4, "day": 1},
+      "tone": "meme",
+      "description": "愚人节，可以玩梗；注意别开伤害人的玩笑。",
+      "priority": 65
+    },
+    {
+      "id": "earth_day",
+      "name": "世界地球日",
+      "rule": {"type": "solar", "month": 4, "day": 22},
+      "tone": "neutral",
+      "description": "世界地球日，可以作为聊天背景。",
+      "priority": 35
+    },
+    {
+      "id": "labour_day",
+      "name": "劳动节",
+      "rule": {"type": "solar", "month": 5, "day": 1},
+      "tone": "festive",
+      "description": "劳动节假期，适合自然聊到休息、出游或加班。",
+      "priority": 55
+    },
+    {
+      "id": "youth_day",
+      "name": "青年节",
+      "rule": {"type": "solar", "month": 5, "day": 4},
+      "tone": "neutral",
+      "description": "青年节，可以作为聊天背景。",
+      "priority": 35
+    },
+    {
+      "id": "wenchuan_memorial",
+      "name": "汶川地震纪念日",
+      "rule": {"type": "solar", "month": 5, "day": 12},
+      "tone": "solemn",
+      "description": "汶川地震纪念日，保持庄重，不玩梗、不庆祝。",
+      "priority": 100
+    },
+    {
+      "id": "day_520",
+      "name": "520",
+      "rule": {"type": "solar", "month": 5, "day": 20},
+      "tone": "meme",
+      "description": "网络情人节，可以自然玩梗，不用强行浪漫。",
+      "priority": 60
+    },
+    {
+      "id": "day_521",
+      "name": "521",
+      "rule": {"type": "solar", "month": 5, "day": 21},
+      "tone": "meme",
+      "description": "网络情人节，可以自然玩梗，不用强行浪漫。",
+      "priority": 55
+    },
+    {
+      "id": "childrens_day",
+      "name": "儿童节",
+      "rule": {"type": "solar", "month": 6, "day": 1},
+      "tone": "festive",
+      "description": "儿童节，可以自然接一句。",
+      "priority": 50
+    },
+    {
+      "id": "shopping_618",
+      "name": "618",
+      "rule": {"type": "solar", "month": 6, "day": 18},
+      "tone": "meme",
+      "description": "618 购物节，可以玩购物/剁手梗，但别硬推销。",
+      "priority": 60
+    },
+    {
+      "id": "day_0721",
+      "name": "0721",
+      "rule": {"type": "solar", "month": 7, "day": 21},
+      "tone": "meme",
+      "description": "网络常见玩梗日；具体怎么接看当下语境，不要主动解释来源。",
+      "priority": 70
+    },
+    {
+      "id": "army_day",
+      "name": "建军节",
+      "rule": {"type": "solar", "month": 8, "day": 1},
+      "tone": "festive",
+      "description": "建军节，适合自然说一句节日相关的话。",
+      "priority": 45
+    },
+    {
+      "id": "surrender_memorial",
+      "name": "日本宣布无条件投降纪念日",
+      "rule": {"type": "solar", "month": 8, "day": 15},
+      "tone": "solemn",
+      "description": "纪念日，保持庄重，不玩梗、不庆祝。",
+      "priority": 95
+    },
+    {
+      "id": "victory_memorial",
+      "name": "抗战胜利纪念日",
+      "rule": {"type": "solar", "month": 9, "day": 3},
+      "tone": "solemn",
+      "description": "抗战胜利纪念日，保持庄重。",
+      "priority": 95
+    },
+    {
+      "id": "teachers_day",
+      "name": "教师节",
+      "rule": {"type": "solar", "month": 9, "day": 10},
+      "tone": "festive",
+      "description": "教师节，有合适语境可以接一句。",
+      "priority": 45
+    },
+    {
+      "id": "mukden_incident",
+      "name": "九一八事变纪念日",
+      "rule": {"type": "solar", "month": 9, "day": 18},
+      "tone": "solemn",
+      "description": "九一八事变纪念日，保持庄重，不玩梗、不庆祝。",
+      "priority": 100
+    },
+    {
+      "id": "national_day",
+      "name": "国庆节",
+      "rule": {"type": "solar", "month": 10, "day": 1},
+      "tone": "festive",
+      "description": "国庆节，可以自然聊到假期；具体安排以当前上下文为准。",
+      "priority": 60
+    },
+    {
+      "id": "programmer_day",
+      "name": "程序员节",
+      "rule": {"type": "solar", "month": 10, "day": 24},
+      "tone": "meme",
+      "description": "1024 程序员节，可以玩程序员梗。",
+      "priority": 55
+    },
+    {
+      "id": "halloween",
+      "name": "万圣节",
+      "rule": {"type": "solar", "month": 10, "day": 31},
+      "tone": "festive",
+      "description": "万圣节，可以自然玩梗或接一句节日气氛。",
+      "priority": 55
+    },
+    {
+      "id": "double_11",
+      "name": "双十一",
+      "rule": {"type": "solar", "month": 11, "day": 11},
+      "tone": "meme",
+      "description": "双十一/光棍节，可以玩购物、单身或剁手梗，但别硬推销。",
+      "priority": 65
+    },
+    {
+      "id": "double_12",
+      "name": "双十二",
+      "rule": {"type": "solar", "month": 12, "day": 12},
+      "tone": "meme",
+      "description": "双十二购物节，可以自然玩梗。",
+      "priority": 55
+    },
+    {
+      "id": "nanjing_memorial",
+      "name": "南京大屠杀死难者国家公祭日",
+      "rule": {"type": "solar", "month": 12, "day": 13},
+      "tone": "solemn",
+      "description": "国家公祭日，保持庄重，不玩梗、不庆祝。",
+      "priority": 100
+    },
+    {
+      "id": "christmas_eve",
+      "name": "平安夜",
+      "rule": {"type": "solar", "month": 12, "day": 24},
+      "tone": "festive",
+      "description": "平安夜，有合适语境可以接一句。",
+      "priority": 45
+    },
+    {
+      "id": "christmas",
+      "name": "圣诞节",
+      "rule": {"type": "solar", "month": 12, "day": 25},
+      "tone": "festive",
+      "description": "圣诞节，有合适语境可以接一句。",
+      "priority": 55
+    },
+    {
+      "id": "new_year_eve",
+      "name": "跨年夜",
+      "rule": {"type": "solar", "month": 12, "day": 31},
+      "tone": "festive",
+      "description": "一年的最后一天，可以自然聊到跨年、总结或新年计划。",
+      "priority": 55
+    },
+    {
+      "id": "kfc_thursday",
+      "name": "疯狂星期四",
+      "rule": {"type": "weekday", "weekday": 4},
+      "tone": "meme",
+      "description": "KFC 疯狂星期四，适合 V 我 50 / 肯德基文案式玩梗；不用每周都提。",
+      "priority": 80
+    }
+  ]
+}

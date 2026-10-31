@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "id": "mothers_day",
+      "name": "母亲节",
+      "rule": {"type": "nth_weekday", "month": 5, "weekday": 7, "nth": 2},
+      "tone": "festive",
+      "description": "5 月第二个星期日，母亲节；有合适语境可以自然接一句。",
+      "priority": 45
+    },
+    {
+      "id": "fathers_day",
+      "name": "父亲节",
+      "rule": {"type": "nth_weekday", "month": 6, "weekday": 7, "nth": 3},
+      "tone": "festive",
+      "description": "6 月第三个星期日，父亲节；有合适语境可以自然接一句。",
+      "priority": 45
+    },
+    {
+      "id": "thanksgiving_us",
+      "name": "感恩节",
+      "rule": {"type": "nth_weekday", "month": 11, "weekday": 4, "nth": 4},
+      "tone": "festive",
+      "description": "美国感恩节，11 月第四个星期四；可以自然聊到感谢或火鸡。",
+      "priority": 40
+    },
+    {
+      "id": "easter",
+      "name": "复活节",
+      "rule": {"type": "computus"},
+      "tone": "festive",
+      "description": "复活节，日期按公历计算；有合适语境可以提一句彩蛋或春天。",
+      "priority": 40
+    },
+    {
+      "id": "memorial_day_us",
+      "name": "美国阵亡将士纪念日",
+      "rule": {"type": "nth_weekday", "month": 5, "weekday": 1, "nth": 5},
+      "tone": "solemn",
+      "description": "美国阵亡将士纪念日（5 月最后一个星期一），保持庄重。",
+      "priority": 90
+    },
+    {
+      "id": "labor_day_us",
+      "name": "美国劳动节",
+      "rule": {"type": "nth_weekday", "month": 9, "weekday": 1, "nth": 1},
+      "tone": "neutral",
+      "description": "美国劳动节，9 月第一个星期一；可以作为背景。",
+      "priority": 30
+    }
+  ]
+}

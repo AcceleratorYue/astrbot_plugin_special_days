@@ -1,0 +1,1733 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "id": "lunar_2025-01-07_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-07"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-01-22_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-22"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-01-23_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-23"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-01-28_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-28"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-01-29_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-01-29"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-02-12_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-02-12"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-03-01_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-03-01"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-05-31_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-05-31"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-08-29_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-08-29"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-09-06_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-09-06"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-10-06_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-06"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2025-10-29_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2025-10-29"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-01-26_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-01-26"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-02-10_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-10"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-02-11_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-11"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-02-16_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-16"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-02-17_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-02-17"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-03-03_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-03-03"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-03-20_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-03-20"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-06-19_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-06-19"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-08-19_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-08-19"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-08-27_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-08-27"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-09-25_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-09-25"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2026-10-18_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2026-10-18"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-01-15_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-01-15"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-01-30_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-01-30"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-01-31_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-01-31"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-02-05_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-02-05"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-02-06_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-02-06"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-02-20_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-02-20"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-03-09_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-03-09"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-06-09_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-06-09"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-08-08_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-08-08"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-08-16_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-08-16"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-09-15_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-09-15"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2027-10-08_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2027-10-08"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-01-04_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-01-04"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-01-19_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-01-19"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-01-20_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-01-20"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-01-25_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-01-25"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-01-26_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-01-26"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-02-09_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-02-09"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-02-26_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-02-26"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-05-28_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-05-28"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-08-26_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-08-26"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-09-03_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-09-03"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-10-03_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-10-03"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2028-10-26_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2028-10-26"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-01-22_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-01-22"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-02-06_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-02-06"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-02-07_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-02-07"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-02-12_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-02-12"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-02-13_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-02-13"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-02-27_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-02-27"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-03-16_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-03-16"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-06-16_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-06-16"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-08-16_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-08-16"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-08-24_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-08-24"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-09-22_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-09-22"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2029-10-16_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2029-10-16"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-01-11_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-01-11"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-01-26_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-01-26"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-01-27_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-01-27"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-02-02_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-02-02"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-02-03_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-02-03"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-02-17_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-02-17"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-03-05_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-03-05"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-06-05_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-06-05"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-08-05_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-08-05"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-08-13_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-08-13"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-09-12_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-09-12"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2030-10-05_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2030-10-05"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-01-01_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-01-01"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-01-16_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-01-16"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-01-17_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-01-17"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-01-22_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-01-22"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-01-23_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-01-23"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-02-06_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-02-06"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-02-22_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-02-22"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-06-24_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-06-24"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-08-24_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-08-24"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-09-01_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-09-01"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-10-01_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-10-01"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2031-10-24_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2031-10-24"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-01-20_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-01-20"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-02-04_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-02-04"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-02-05_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-02-05"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-02-10_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-02-10"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-02-11_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-02-11"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-02-25_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-02-25"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-03-13_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-03-13"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-06-12_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-06-12"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-08-12_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-08-12"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-08-20_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-08-20"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-09-19_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-09-19"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2032-10-12_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2032-10-12"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-01-08_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-01-08"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-01-23_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-01-23"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-01-24_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-01-24"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-01-30_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-01-30"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-01-31_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-01-31"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-02-14_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-02-14"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-03-02_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-03-02"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-06-01_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-06-01"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-08-01_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-08-01"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-08-09_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-08-09"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-09-08_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-09-08"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2033-10-01_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2033-10-01"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-01-27_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-01-27"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-02-11_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-02-11"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-02-12_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-02-12"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-02-18_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-02-18"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-02-19_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-02-19"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-03-05_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-03-05"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-03-21_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-03-21"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-06-20_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-06-20"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-08-20_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-08-20"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-08-28_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-08-28"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-09-27_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-09-27"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2034-10-20_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2034-10-20"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-01-16_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-01-16"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-01-31_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-01-31"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-02-01_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-02-01"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-02-07_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-02-07"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-02-08_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-02-08"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-02-22_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-02-22"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-03-11_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-03-11"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-06-10_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-06-10"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-08-10_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-08-10"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-08-18_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-08-18"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-09-16_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-09-16"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2035-10-09_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2035-10-09"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-01-05_腊八节",
+      "name": "腊八节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-01-05"
+      },
+      "tone": "festive",
+      "description": "腊八节，可以聊腊八粥。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-01-20_小年",
+      "name": "小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-01-20"
+      },
+      "tone": "festive",
+      "description": "北方小年，可以聊年味和准备过年。",
+      "priority": 45,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-01-21_南方小年",
+      "name": "南方小年",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-01-21"
+      },
+      "tone": "festive",
+      "description": "南方小年，可以聊年味和准备过年。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-01-27_除夕",
+      "name": "除夕",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-01-27"
+      },
+      "tone": "festive",
+      "description": "除夕，可以聊年夜饭、守岁或回家。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-01-28_春节",
+      "name": "春节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-01-28"
+      },
+      "tone": "festive",
+      "description": "农历新年，可以说一句新年相关的话。",
+      "priority": 70,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-02-11_元宵节",
+      "name": "元宵节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-02-11"
+      },
+      "tone": "festive",
+      "description": "元宵节，可以聊汤圆、花灯或团圆。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-02-28_龙抬头",
+      "name": "龙抬头",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-02-28"
+      },
+      "tone": "neutral",
+      "description": "农历二月初二，可以作为聊天背景。",
+      "priority": 40,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-05-30_端午节",
+      "name": "端午节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-05-30"
+      },
+      "tone": "festive",
+      "description": "端午节，可以聊粽子、龙舟或假期。",
+      "priority": 60,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-08-28_七夕节",
+      "name": "七夕节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-08-28"
+      },
+      "tone": "festive",
+      "description": "七夕，可以自然接一句，不用强行浪漫。",
+      "priority": 55,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-09-05_中元节",
+      "name": "中元节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-09-05"
+      },
+      "tone": "neutral",
+      "description": "中元节，按语境谨慎提及。",
+      "priority": 35,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-10-04_中秋节",
+      "name": "中秋节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-10-04"
+      },
+      "tone": "festive",
+      "description": "中秋节，可以聊月饼、团圆或赏月。",
+      "priority": 65,
+      "source": "lunar"
+    },
+    {
+      "id": "lunar_2036-10-27_重阳节",
+      "name": "重阳节",
+      "rule": {
+        "type": "one_time",
+        "date": "2036-10-27"
+      },
+      "tone": "neutral",
+      "description": "重阳节，可以聊登高、敬老或秋天。",
+      "priority": 45,
+      "source": "lunar"
+    }
+  ]
+}

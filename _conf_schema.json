@@ -1,0 +1,71 @@
+{
+  "enable": {
+    "description": "启用特殊日程",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后完全不注入；自定义日程仍保留。"
+  },
+  "enable_builtin": {
+    "description": "启用内置日程",
+    "type": "bool",
+    "default": true,
+    "hint": "内置节假日、纪念日、玩梗日（data/builtin_days.json）。"
+  },
+  "timezone": {
+    "description": "时区",
+    "type": "string",
+    "default": "Asia/Shanghai",
+    "hint": "按该时区判断“今天”；默认 Asia/Shanghai。"
+  },
+  "max_days": {
+    "description": "每次最多注入几条",
+    "type": "int",
+    "default": 3,
+    "hint": "同一天可能命中多个日程，限制条数控制 token；范围 1-6。",
+    "slider": {
+      "min": 1,
+      "max": 6,
+      "step": 1
+    }
+  },
+  "inject_in_group": {
+    "description": "群聊注入",
+    "type": "bool",
+    "default": true
+  },
+  "inject_in_private": {
+    "description": "私聊注入",
+    "type": "bool",
+    "default": true
+  },
+  "allow_user_custom": {
+    "description": "允许普通用户维护本会话自定义日程",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后只有管理员能通过指令添加/删除；自定义日程只影响当前会话。"
+  },
+  "suppress_meme_on_solemn": {
+    "description": "纪念日压制玩梗日",
+    "type": "bool",
+    "default": true,
+    "hint": "同一天出现 solemn 纪念日时，自动丢弃 meme 玩梗日，避免不当玩笑。"
+  },
+  "custom_overrides_builtin": {
+    "description": "自定义同日同名覆盖内置",
+    "type": "bool",
+    "default": true,
+    "hint": "同一天同名时优先使用当前会话的自定义日程，而不是内置/农历/法定条目。"
+  },
+  "require_tool_confirm": {
+    "description": "LLM 工具写入需要 confirm 参数",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后 special_day_manage 的 create/update/delete 必须传 confirm=true 才写入，便于二次确认。"
+  },
+  "debug_log": {
+    "description": "调试日志",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后每次注入会记录一条日志。"
+  }
+}
