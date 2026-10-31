@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-EXCLUDE_DIRS = {"tests", "scripts", "dist", "__pycache__", ".git"}
+EXCLUDE_DIRS = {"tests", "scripts", "dist", "__pycache__", ".git", ".github"}
 EXCLUDE_FILES = {"audit.log", "special_days.db", ".gitignore", ".gitattributes"}
 
 
